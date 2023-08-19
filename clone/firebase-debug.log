@@ -1,0 +1,409 @@
+[debug] [2023-07-16T15:12:47.737Z] ----------------------------------------------------------------------
+[debug] [2023-07-16T15:12:47.739Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -p 5001
+[debug] [2023-07-16T15:12:47.740Z] CLI Version:   12.4.4
+[debug] [2023-07-16T15:12:47.740Z] Platform:      win32
+[debug] [2023-07-16T15:12:47.740Z] Node Version:  v16.17.0
+[debug] [2023-07-16T15:12:47.742Z] Time:          Sun Jul 16 2023 20:42:47 GMT+0530 (India Standard Time)
+[debug] [2023-07-16T15:12:47.742Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-16T15:12:47.865Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-16T15:12:47.866Z] > authorizing via signed-in user (anpkaushik@gmail.com)
+[debug] [2023-07-16T15:12:47.866Z] [iam] checking project my-project-74c58 for permissions ["firebase.projects.get"]
+[debug] [2023-07-16T15:12:47.868Z] > refreshing access token with scopes: []
+[debug] [2023-07-16T15:12:47.870Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-16T15:12:47.870Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-16T15:12:48.199Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-16T15:12:48.200Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-16T15:12:48.223Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-74c58:testIamPermissions [none]
+[debug] [2023-07-16T15:12:48.223Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-74c58:testIamPermissions x-goog-quota-user=projects/my-project-74c58
+[debug] [2023-07-16T15:12:48.224Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-74c58:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-16T15:12:49.863Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-74c58:testIamPermissions 200
+[debug] [2023-07-16T15:12:49.864Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-74c58:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-16T15:12:49.865Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58 [none]
+[debug] [2023-07-16T15:12:50.602Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58 200
+[debug] [2023-07-16T15:12:50.603Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58 {"projectId":"my-project-74c58","projectNumber":"554213858610","displayName":"My Project","name":"projects/my-project-74c58","resources":{"hostingSite":"my-project-74c58"},"state":"ACTIVE","etag":"1_642aac1b-3f81-4d7c-9d27-f44f30f1288b"}
+[info] 
+[info] === Serving from 'C:\Users\User'...
+[info] 
+[debug] [2023-07-16T15:12:50.618Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\anpkaushik_gmail_com_application_default_credentials.json
+[debug] [2023-07-16T15:12:50.619Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-project-74c58/sites 
+[debug] [2023-07-16T15:12:50.632Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\anpkaushik_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\anpkaushik_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-16T15:12:50.633Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58/adminSdkConfig [none]
+[debug] [2023-07-16T15:12:51.151Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58/adminSdkConfig 200
+[debug] [2023-07-16T15:12:51.152Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58/adminSdkConfig {"projectId":"my-project-74c58","storageBucket":"my-project-74c58.appspot.com"}
+[debug] [2023-07-16T15:12:51.853Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-project-74c58/sites 200
+[debug] [2023-07-16T15:12:51.854Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-project-74c58/sites {"sites":[{"name":"projects/my-project-74c58/sites/my-project-74c58","defaultUrl":"https://my-project-74c58.web.app","appId":"1:554213858610:web:ba2516536cf589ce58cb2b","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-16T15:12:51.854Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58/webApps/1:554213858610:web:ba2516536cf589ce58cb2b/config [none]
+[debug] [2023-07-16T15:12:53.469Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58/webApps/1:554213858610:web:ba2516536cf589ce58cb2b/config 200
+[debug] [2023-07-16T15:12:53.469Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58/webApps/1:554213858610:web:ba2516536cf589ce58cb2b/config {"projectId":"my-project-74c58","appId":"1:554213858610:web:ba2516536cf589ce58cb2b","storageBucket":"my-project-74c58.appspot.com","apiKey":"AIzaSyDAQpRtriXvbDpXGcjmkw0s0vblFiAip6E","authDomain":"my-project-74c58.firebaseapp.com","messagingSenderId":"554213858610","measurementId":"G-1MSLDT5FRG"}
+[debug] [2023-07-16T15:12:53.487Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58 [none]
+[debug] [2023-07-16T15:12:53.967Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58 200
+[debug] [2023-07-16T15:12:53.968Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-project-74c58 {"projectId":"my-project-74c58","projectNumber":"554213858610","displayName":"My Project","name":"projects/my-project-74c58","resources":{"hostingSite":"my-project-74c58"},"state":"ACTIVE","etag":"1_642aac1b-3f81-4d7c-9d27-f44f30f1288b"}
+[info] i  functions: Watching "C:\Users\User\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\functions\" for Cloud Functions..."}}
+[info] i  hosting[my-project-74c58]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[my-project-74c58]: Local server: http://localhost:5003 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5003\u001b[22m\u001b[24m"}}
+[debug] [2023-07-16T15:12:54.014Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-07-16T15:13:02.345Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^111.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:13:02.346Z] Building nodejs source
+[debug] [2023-07-16T15:13:02.346Z] Failed to find version of module node: reached end of search path C:\Users\User\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-07-16T15:13:02.350Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:13:02.366Z] Found firebase-functions binary at 'C:\Users\User\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8959
+
+[debug] [2023-07-16T15:13:02.930Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'stripe'
+Require stack:
+- C:\Users\User\functions\index.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] i  functions: Watching "C:\Users\User\amazon" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\amazon\" for Cloud Functions..."}}
+[debug] [2023-07-16T15:13:02.954Z] Validating nodejs source
+[debug] [2023-07-16T15:13:04.616Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:13:04.616Z] Building nodejs source
+[debug] [2023-07-16T15:13:04.616Z] Failed to find version of module node: reached end of search path C:\Users\User\amazon\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-07-16T15:13:04.618Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:13:04.629Z] Found firebase-functions binary at 'C:\Users\User\amazon\node_modules\.bin\firebase-functions'
+[info] Serving at port 8274
+
+[debug] [2023-07-16T15:13:05.431Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:51 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:51 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:51.474Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js [none]
+[debug] [2023-07-16T15:17:51.481Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js [none]
+[debug] [2023-07-16T15:17:51.663Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-database-compat.js [none]
+[debug] [2023-07-16T15:17:51.875Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js [none]
+[debug] [2023-07-16T15:17:51.881Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-functions-compat.js [none]
+[debug] [2023-07-16T15:17:51.889Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-messaging-compat.js [none]
+[debug] [2023-07-16T15:17:51.947Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-database-compat.js 200
+[debug] [2023-07-16T15:17:51.948Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-database-compat.js [stream]
+[debug] [2023-07-16T15:17:51.954Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js 200
+[debug] [2023-07-16T15:17:51.955Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:51 +0000] "GET /__/firebase/10.0.0/firebase-app-compat.js HTTP/1.1" 200 9306 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:51 +0000] \"GET /__/firebase/10.0.0/firebase-app-compat.js HTTP/1.1\" 200 9306 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:51.964Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-storage-compat.js [none]
+[debug] [2023-07-16T15:17:51.977Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js 200
+[debug] [2023-07-16T15:17:51.977Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-database-compat.js HTTP/1.1" 200 47916 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-database-compat.js HTTP/1.1\" 200 47916 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.039Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-auth-compat.js HTTP/1.1" 200 38089 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-auth-compat.js HTTP/1.1\" 200 38089 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.063Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-remote-config-compat.js [none]
+[debug] [2023-07-16T15:17:52.071Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js 200
+[debug] [2023-07-16T15:17:52.071Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js [stream]
+[debug] [2023-07-16T15:17:52.094Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-functions-compat.js 200
+[debug] [2023-07-16T15:17:52.095Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-functions-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-functions-compat.js HTTP/1.1" 200 3252 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-functions-compat.js HTTP/1.1\" 200 3252 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.110Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-messaging-compat.js 200
+[debug] [2023-07-16T15:17:52.111Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-messaging-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-messaging-compat.js HTTP/1.1" 200 9934 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-messaging-compat.js HTTP/1.1\" 200 9934 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.121Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-performance-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.167Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-storage-compat.js 200
+[debug] [2023-07-16T15:17:52.167Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-storage-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-firestore-compat.js HTTP/1.1" 200 100785 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-firestore-compat.js HTTP/1.1\" 200 100785 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-storage-compat.js HTTP/1.1" 200 13326 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-storage-compat.js HTTP/1.1\" 200 13326 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.245Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics-compat.js 200
+[debug] [2023-07-16T15:17:52.245Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-analytics-compat.js HTTP/1.1" 200 9216 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-analytics-compat.js HTTP/1.1\" 200 9216 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.276Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-remote-config-compat.js 200
+[debug] [2023-07-16T15:17:52.277Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-remote-config-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-remote-config-compat.js HTTP/1.1" 200 8814 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-remote-config-compat.js HTTP/1.1\" 200 8814 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:17:52.353Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-performance-compat.js 200
+[debug] [2023-07-16T15:17:52.353Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/10.0.0/firebase-performance-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /__/firebase/10.0.0/firebase-performance-compat.js HTTP/1.1" 200 10251 "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /__/firebase/10.0.0/firebase-performance-compat.js HTTP/1.1\" 200 10251 \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[info] i  hosting: 127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [16/Jul/2023:15:17:52 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.82\""}}
+[debug] [2023-07-16T15:33:01.768Z] File C:\Users\User\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-16T15:33:02.772Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-07-16T15:33:05.000Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^111.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:33:05.000Z] Building nodejs source
+[debug] [2023-07-16T15:33:05.000Z] Failed to find version of module node: reached end of search path C:\Users\User\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-07-16T15:33:05.002Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:33:05.018Z] Found firebase-functions binary at 'C:\Users\User\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8243
+
+[debug] [2023-07-16T15:33:05.536Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'stripe'
+Require stack:
+- C:\Users\User\functions\index.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-07-16T15:34:58.943Z] File C:\Users\User\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-16T15:34:59.946Z] Validating nodejs source
+[debug] [2023-07-16T15:35:09.990Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1112:20)
+    at Object.spawnSync (node:child_process:827:24)
+    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-07-16T15:35:09.991Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^111.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:35:09.991Z] Building nodejs source
+[debug] [2023-07-16T15:35:09.991Z] Failed to find version of module node: reached end of search path C:\Users\User\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-07-16T15:35:09.992Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:35:10.004Z] Found firebase-functions binary at 'C:\Users\User\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8958
+
+[debug] [2023-07-16T15:35:10.578Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'stripe'
+Require stack:
+- C:\Users\User\functions\index.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-07-16T15:53:22.600Z] File C:\Users\User\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-16T15:53:23.607Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-07-16T15:53:25.762Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^111.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:53:25.763Z] Building nodejs source
+[debug] [2023-07-16T15:53:25.764Z] Failed to find version of module node: reached end of search path C:\Users\User\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-07-16T15:53:25.770Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:53:25.783Z] Found firebase-functions binary at 'C:\Users\User\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-07-16T15:53:25.812Z] File C:\Users\User\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8569
+
+[debug] [2023-07-16T15:53:26.593Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'stripe'
+Require stack:
+- C:\Users\User\functions\index.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-07-16T15:53:26.817Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-07-16T15:53:28.830Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^111.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:53:28.831Z] Building nodejs source
+[debug] [2023-07-16T15:53:28.831Z] Failed to find version of module node: reached end of search path C:\Users\User\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-07-16T15:53:28.833Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:53:28.843Z] Found firebase-functions binary at 'C:\Users\User\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8093
+
+[debug] [2023-07-16T15:53:29.292Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'stripe'
+Require stack:
+- C:\Users\User\functions\index.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-07-16T15:53:31.174Z] File C:\Users\User\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-16T15:53:32.180Z] Validating nodejs source
+[debug] [2023-07-16T15:53:42.212Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1112:20)
+    at Object.spawnSync (node:child_process:827:24)
+    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-07-16T15:53:42.213Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^111.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-07-16T15:53:42.213Z] Building nodejs source
+[debug] [2023-07-16T15:53:42.213Z] Failed to find version of module node: reached end of search path C:\Users\User\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-07-16T15:53:42.216Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-16T15:53:42.225Z] Found firebase-functions binary at 'C:\Users\User\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8401
+
+[debug] [2023-07-16T15:53:42.798Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'stripe'
+Require stack:
+- C:\Users\User\functions\index.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
